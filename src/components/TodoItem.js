@@ -12,7 +12,9 @@ const TodoItem = (props) => {
     textDecoration: 'line-through',
   };
 
-  const { completed, id, title } = props.todo;
+  const {
+    todo, handleChangeProps, deleteTodoProps, setUpdate,
+  } = props;
 
   const editMode = {};
   const viewMode = {};
@@ -29,21 +31,21 @@ const TodoItem = (props) => {
         <input
           type="checkbox"
           className={styles.checkbox}
-          checked={completed}
-          onChange={() => props.handleChangeProps(id)}
+          checked={todo.completed}
+          onChange={() => handleChangeProps(todo.id)}
         />
-        <button onClick={() => props.deleteTodoProps(id)}>
+        <button onClick={() => deleteTodoProps(todo.id)} type="button">
           <FaTrash style={{ color: 'orangered', fontSize: '16px' }} />
         </button>
-        <span style={completed ? completedStyle : null}>{title}</span>
+        <span style={todo.completed ? completedStyle : null}>{todo.title}</span>
       </div>
       <input
         type="text"
         style={editMode}
         className={styles.textInput}
-        value={title}
+        value={todo.title}
         onChange={(e) => {
-          props.setUpdate(e.target.value, id);
+          setUpdate(e.target.value, todo.id);
         }}
         onKeyDown={(e) => {
           if (e.key === 'Enter') {
