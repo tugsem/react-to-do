@@ -12,7 +12,7 @@
 - CSS
 - JavaScript
 
-## Live Demo (if available)
+## Live Demo
 
 [Live Demo Link](https://tugsem.github.io/react-to-do)
 
