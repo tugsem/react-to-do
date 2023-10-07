@@ -6,18 +6,17 @@ const Header = () => {
     lineHeight: '1.5em',
     color: '#ececec',
   };
+  const titleStyle = {
+    fontSize: '6rem',
+    fontWeight: '600',
+    marginBottom: '2rem',
+    textTransform: 'lowercase',
+    textAlign: 'center',
+    textShadow: '0 4px 5px #999',
+  };
   return (
     <header style={headerStyle}>
-      <h1
-        style={{
-          fontSize: '6rem',
-          fontWeight: '600',
-          marginBottom: '2rem',
-          lineHeight: '1em',
-          textTransform: 'lowercase',
-          textAlign: 'center',
-        }}
-      >
+      <h1 style={titleStyle}>
         todos
       </h1>
     </header>

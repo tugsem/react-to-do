@@ -8,13 +8,14 @@ const TodosList = (props) => {
   return (
     <ul>
       {todos.map((todo) => (
-        <TodoItem
-          key={todo.id}
-          todo={todo}
-          handleChangeProps={handleChangeProps}
-          deleteTodoProps={deleteTodoProps}
-          setUpdate={setUpdate}
-        />
+        <li key={todo.id} style={{listStyleType: 'none'}}>
+          <TodoItem
+            todo={todo}
+            handleChangeProps={handleChangeProps}
+            deleteTodoProps={deleteTodoProps}
+            setUpdate={setUpdate}
+          />
+        </li>
       ))}
     </ul>
   );

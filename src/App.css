@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,11 +7,25 @@
 }
 
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: Roboto;
   line-height: 1.4;
   color: #444;
-  background: #fff;
+  background: #ffffff;
   height: 100vh;
+}
+
+header {
+  padding: 20px 0;
+  line-height: 1.5em;
+  color: #ececec;
+}
+.header-title {
+  font-size: 6rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  line-height: 1em;
+  text-transform: lowercase;
+  text-align: center;
 }
 
 .container {
@@ -44,8 +60,8 @@ body {
   border-radius: calc(0.5 * 100px);
 }
 
-.input-text::placeholder {
-  color: #000;
+::placeholder {
+  color: #e2e0e0;
 }
 
 .input-submit {
@@ -62,9 +78,4 @@ body {
   height: 45px;
   outline: none;
   border: none;
-}
-
-.active-link {
-  color: orangered;
-  text-decoration: underline;
 }
