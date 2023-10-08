@@ -1,38 +1,42 @@
-  .item {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.2rem;
-    padding: 10px 0;
-    border-bottom: 1px solid #ececec;
-  }
+.item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #ececec;
+}
 
-  .checkbox {
-    width: 20px;
-    height: 20px;
-    padding-right: 15px;
-  }
+.checkbox {
+  width: 20px;
+  height: 20px;
+  padding-right: 15px;
+}
 
-  .item button {
-    border: none;
-    cursor: pointer;
-    background: transparent;
-  }
+.item button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
 
-  .textInput,
-  .completed {
-    width: 100%;
-    font-size: 1.2rem;
-    padding: 10px;
-    outline: none;
-    border:none;
-    color:#595959;
-  }
+.textInput {
+  cursor: url('../pencil-svgrepo-com.svg'), auto;
+}
 
-  .completed {
-    font-style: italic;
-    color: #595959;
-    opacity: 0.4;
-    text-decoration: line-through;
-  }
+.textInput,
+.completed {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #595959;
+}
+
+.completed {
+  font-style: italic;
+  color: #595959;
+  opacity: 0.4;
+  text-decoration: line-through;
+}

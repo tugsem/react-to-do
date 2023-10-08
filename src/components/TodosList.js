@@ -8,7 +8,7 @@ const TodosList = (props) => {
   return (
     <ul>
       {todos.map((todo) => (
-        <li key={todo.id} style={{listStyleType: 'none'}}>
+        <li key={todo.id} style={{ listStyleType: 'none' }}>
           <TodoItem
             todo={todo}
             handleChangeProps={handleChangeProps}
