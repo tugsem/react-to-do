@@ -1,0 +1,42 @@
+.item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  padding-right: 15px;
+}
+
+.item button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.textInput {
+  cursor: url('../pencil-svgrepo-com.svg'), auto;
+}
+
+.textInput,
+.completed {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #595959;
+}
+
+.completed {
+  font-style: italic;
+  color: #595959;
+  opacity: 0.4;
+  text-decoration: line-through;
+}
